@@ -1,0 +1,30 @@
+$cor1 : #f00;
+$cor2 : #333;
+
+$tam1 : 2em;
+$tam2 : 1.2em;
+
+body {
+  pxrgin-top: 50px;
+}
+
+.navbar-brand {
+  padding:5px 0px;
+  img {
+    width: 200px;
+  }
+}
+
+.navbar-header {
+  div {
+    float: right;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+}
+
+footer {
+  background-color: $cor2;
+  color: $cor1;
+  text-align: center;
+}
