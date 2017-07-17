@@ -13,7 +13,8 @@ $(document).ready(function () {
     function preencher(dados) {
         $.each(dados, function (key, val) {
             //adicionar os itens no .row
-            $(".row").append("<div class='col-md-6 col-sm-6 text-center'><div class='thumbnail'>"+val.imagem+"<p>"+val.nome+"</p></div></div>");
+            $(".row").append("<div class='col-md-6 col-sm-6 text-center'><div class='thumbnail'>"+val.imagem+"<p>"+val.nome+"</p><p class='valor'>"+val.valor+"</p><a href='produto.html?id="+val.id+"' class='btn btn-danger'>Detalhes</a></div></div>");
         });
+        $("#msg").html("");
     }
 });

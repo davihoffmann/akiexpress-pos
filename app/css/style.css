@@ -16,4 +16,15 @@ footer {
   color: #f00;
   text-align: center; }
 
+.row .thumbnail img {
+  height: 300px; }
+.row .thumbnail p {
+  height: 60px;
+  font-size: 1.2em;
+  font-weight: bold; }
+.row .thumbnail .valor {
+  color: #f00;
+  font-size: 2em;
+  height: 30px; }
+
 /*# sourceMappingURL=style.css.map */

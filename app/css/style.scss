@@ -28,3 +28,19 @@ footer {
   color: $cor1;
   text-align: center;
 }
+
+.row .thumbnail {
+  img {
+    height: 300px;
+  }
+  p {
+    height:60px;
+    font-size: $tam2;
+    font-weight: bold;
+  }
+  .valor {
+    color: $cor1;
+    font-size: $tam1;
+    height: 30px;
+  }
+}
