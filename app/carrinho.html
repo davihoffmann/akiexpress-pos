@@ -11,10 +11,11 @@
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js" async></script>
+    <script type="text/javascript" src="js/carrinho.js" async></script>
     <script type="text/javascript" src="js/funcoes.js" async></script>
-    <script type="text/javascript" src="js/home.js" async></script>
 </head>
 <body>
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,9 +33,7 @@
                 <a href="carrinho.html" class="btn btn-default"><i class="glyphicon glyphicon-shopping-cart"></i></a>
             </div>
 
-
             <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="AkiExpress" title="AkiPexpress"></a>
-
         </div>
 
 
@@ -73,11 +72,23 @@
 </div>
 
 <main>
-    <h1>Produtos em Destaques</h1>
+    <h1>Carrinnho de Compras</h1>
     <div id="msg"></div>
-    <div class="row">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <td>Foto</td>
+                <td>Nome</td>
+                <td>Valor</td>
+                <td>Excluir</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+    </table>
 
-    </div>
+    <button type="button" class="btn btn-danger btn-lg btn-limpar">Limpar Carrinho</button>
+    <button type="button" class="btn btn-warning btn-lg btn-continuar pull-right">Continuar Comprando</button>
 </main>
 
 <footer>
