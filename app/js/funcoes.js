@@ -110,3 +110,13 @@ function retornaPagina() {
     }
     return id;
 }
+
+//verificar se existe compatibilidade e registrar o service worker
+if("serviceWorker" in navigator) {
+    //registrar o arquivo
+    navigator.serviceWorker.register("sw.js").then(function () {
+        console.log("Service Worker registrado com sucesso!");
+    });
+} else {
+    alert("Seu navegador não possui suporte a service worker, por favor atualize!");
+}
